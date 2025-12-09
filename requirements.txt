@@ -1,0 +1,12 @@
+plaid-python>=16.0.0
+firebase-admin
+Flask
+flask-cors
+python-dotenv
+cryptography
+joblib
+pandas
+numpy
+requests
+scikit-learn
+gunicorn
