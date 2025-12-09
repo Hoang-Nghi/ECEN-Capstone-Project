@@ -1,0 +1,46 @@
+version: 1
+collections:
+  users:
+    docId: <uid>
+    fields:
+      email: string
+      display_name: string
+      balance: number
+      budget_monthly_total: number
+    subcollections:
+      transactions:
+        docId: auto
+        fields:
+          date: string   # 'YYYY-MM-DD'
+          amount: number
+          name: string
+          merchant_name: string
+          category: array<string>  # e.g., ["Dining","Food"]
+          source: string  # "plaid" | "receipt" | "manual"
+      receipts:
+        docId: auto
+        fields:
+          extracted_text: string
+          amount: number
+          merchant: string
+          processed_at: timestamp
+      games:
+        docId: game_state
+        fields:
+          active_challenge:
+            category: string
+            weekly_goal: number
+          current_streak: number
+          progress: number
+          last_spend_total: number
+          updated_at: timestamp
+      game_events:
+        docId: auto
+        fields:
+          type: string                 # "budget_streak_evaluated"
+          category: string
+          weekly_goal: number
+          spend_total: number
+          success: boolean
+          new_streak: number
+          created_at: timestamp
