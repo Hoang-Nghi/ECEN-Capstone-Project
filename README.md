@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
@@ -48,3 +49,9 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+=======
+# Financial Advisor App for Students
+Senior Capstone Project
+
+The Personalized Financial Advisor App for Students is an application designed to help students manage finances by tracking expenses, recommending budgets, and providing insights on savings and investment options.
+>>>>>>> ad506be7df074d874d71b7ce41fd62988e2c8d54
